@@ -1,0 +1,210 @@
+{"duration_ms":"14637","share_with_app_devs":1,"roots_installed":0,"bug_type":"202","os_version":"iPhone OS 18.7.9 (22H355)","slice_uuid":"D4D9504A-E90E-3B72-A908-B71A2BF90461","is_first_party":0,"incident_id":"86537B6F-370C-451D-A781-A96EBEA5D38B","timestamp":"2026-07-22 04:38:06.00 +0900","app_name":"coreduetd","name":"coreduetd"}
+Date/Time:        2026-07-22 04:37:43.354 +0900
+End time:         2026-07-22 04:37:57.990 +0900
+OS Version:       iPhone OS 18.7.9 (Build 22H355)
+Architecture:     arm64e
+Report Version:   60
+Incident Identifier: 86537B6F-370C-451D-A781-A96EBEA5D38B
+Share With Devs:  Yes
+
+Data Source:      Microstackshots
+Shared Cache:     27B0CA49-348E-3C87-9F44-C9B8ACB8563F slid base address 0x199010000, slide 0x19010000
+
+Command:          coreduetd
+Path:             /usr/libexec/coreduetd
+Resource Coalition: "com.apple.coreduetd"(321)
+On Behalf Of:     1 sample UNKNOWN [31] (1 sample originated by UNKNOWN [31])
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+PID:              196
+
+Event:            cpu usage
+Action taken:     none
+CPU:              14 seconds cpu time over 15 seconds (97% cpu average), exceeding limit of 95% cpu over 15 seconds
+CPU limit:        14s
+Limit duration:   15s
+CPU used:         14s
+CPU duration:     15s
+Duration:         14.64s
+Duration Sampled: 10.15s (event ends 4.41s after samples)
+Steps:            2
+
+Hardware model:   iPhone11,2
+Active cpus:      6
+Memory size:      3.69 GB
+HW page size:     16384
+VM page size:     16384
+Shared cache residency: 13.37% (653.03 MB / 4882.75 MB)
+
+Time Since Boot:  10288s
+Time Awake Since Boot: 4360s
+Time Since Wake:  422s
+
+Advisory levels:  Battery -> 3, User -> 3, ThermalPressure -> 0, Combined -> 3
+Free disk space:  7931.39 MB/59.49 GB, low space threshold 150 MB
+Low Power Mode:   Enabled
+Vnodes Available: 68.40% (13680/20000, 10000 allocated, 10000 soft limit)
+Models:           none
+
+Preferred User Language: zh-Hant-KR, ko-KR
+Country Code:     KR
+Keyboards:        en_US QWERTY, zh_Hant-Pinyin Pinyin-Traditional
+OS Cryptex File Extents: 1
+
+Heaviest stack for the target process:
+  1  ??? (libsystem_pthread.dylib + 2732) [0x2260c0aac]
+  1  ??? (libsystem_pthread.dylib + 2572) [0x2260c0a0c]
+  1  ??? (libdispatch.dylib + 84576) [0x1a3b4fa60]
+  1  ??? (libdispatch.dylib + 86492) [0x1a3b501dc]
+  1  ??? (libdispatch.dylib + 44512) [0x1a3b45de0]
+  1  ??? (libdispatch.dylib + 41680) [0x1a3b452d0]
+  1  ??? (libdispatch.dylib + 112004) [0x1a3b56584]
+  1  ??? (libdispatch.dylib + 6828) [0x1a3b3caac]
+  1  ??? (CoreDuet + 510340) [0x1a7e10984]
+  1  ??? (coreduetd + 103924) [0x100d195f4]
+  1  ??? (coreduetd + 105604) [0x100d19c84]
+  1  ??? (CoreDuet + 1078856) [0x1a7e9b648]
+  1  ??? (CoreDuet + 1078044) [0x1a7e9b31c]
+  1  ??? (CoreDuet + 1615092) [0x1a7f1e4f4]
+  1  ??? (CoreDuet + 68964) [0x1a7da4d64]
+  1  ??? (libdispatch.dylib + 71464) [0x1a3b4c728]
+  1  ??? (libdispatch.dylib + 112004) [0x1a3b56584]
+  1  ??? (CoreDuet + 71924) [0x1a7da58f4]
+  1  ??? (CoreDuet + 69452) [0x1a7da4f4c]
+  1  ??? (CoreDuet + 72496) [0x1a7da5b30]
+  1  ??? (CoreDuet + 87464) [0x1a7da95a8]
+  1  ??? (CoreDuet + 90180) [0x1a7daa044]
+  1  ??? (BiomePubSub + 15928) [0x1c655be38]
+  1  ??? (BiomePubSub + 15132) [0x1c655bb1c]
+  1  ??? (BiomePubSub + 15264) [0x1c655bba0]
+  1  ??? (BiomePubSub + 23832) [0x1c655dd18]
+  1  ??? (BiomePubSub + 23832) [0x1c655dd18]
+  1  ??? (BiomePubSub + 24156) [0x1c655de5c]
+  1  ??? (BiomePubSub + 12608) [0x1c655b140]
+  1  ??? (BiomePubSub + 23880) [0x1c655dd48]
+  1  ??? (CoreDuet + 1024756) [0x1a7e8e2f4]
+  1  ??? (BiomeStreams + 1048448) [0x1a78b7f80]
+  1  ??? (BiomeStreams + 851980) [0x1a788800c]
+  1  ??? (ProtocolBuffer + 6860) [0x1c2851acc]
+  1  ??? (CoreDuet + 949392) [0x1a7e7bc90]
+  1  ??? (libobjc.A.dylib + 36312) [0x199120dd8]
+
+
+Powerstats for:   coreduetd [196]
+UUID:             D4D9504A-E90E-3B72-A908-B71A2BF90461
+Path:             /usr/libexec/coreduetd
+Resource Coalition: 1 sample "com.apple.coreduetd"(321)
+On Behalf Of:     1 sample UNKNOWN [31] (1 sample originated by UNKNOWN [31])
+Architecture:     arm64e
+Parent:           UNKNOWN [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        11.11 MB
+Start time:       2026-07-22 04:37:43.432 +0900
+End time:         2026-07-22 04:37:43.432 +0900
+Num samples:      1 (50%)
+Num threads:      1
+Primary state:    1 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified, e-core
+User Activity:    1 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 1 samples on AC
+  1  ??? (libsystem_pthread.dylib + 2732) [0x2260c0aac]
+    1  ??? (libsystem_pthread.dylib + 2572) [0x2260c0a0c]
+      1  ??? (libdispatch.dylib + 84576) [0x1a3b4fa60]
+        1  ??? (libdispatch.dylib + 86492) [0x1a3b501dc]
+          1  ??? (libdispatch.dylib + 44512) [0x1a3b45de0]
+            1  ??? (libdispatch.dylib + 41680) [0x1a3b452d0]
+              1  ??? (libdispatch.dylib + 112004) [0x1a3b56584]
+                1  ??? (libdispatch.dylib + 6828) [0x1a3b3caac]
+                  1  ??? (CoreDuet + 510340) [0x1a7e10984]
+                    1  ??? (coreduetd + 103924) [0x100d195f4]
+                      1  ??? (coreduetd + 105604) [0x100d19c84]
+                        1  ??? (CoreDuet + 1078856) [0x1a7e9b648]
+                          1  ??? (CoreDuet + 1078044) [0x1a7e9b31c]
+                            1  ??? (CoreDuet + 1615092) [0x1a7f1e4f4]
+                              1  ??? (CoreDuet + 68964) [0x1a7da4d64]
+                                1  ??? (libdispatch.dylib + 71464) [0x1a3b4c728]
+                                  1  ??? (libdispatch.dylib + 112004) [0x1a3b56584]
+                                    1  ??? (CoreDuet + 71924) [0x1a7da58f4]
+                                      1  ??? (CoreDuet + 69452) [0x1a7da4f4c]
+                                        1  ??? (CoreDuet + 72496) [0x1a7da5b30]
+                                          1  ??? (CoreDuet + 87464) [0x1a7da95a8]
+                                            1  ??? (CoreDuet + 90180) [0x1a7daa044]
+                                              1  ??? (BiomePubSub + 15928) [0x1c655be38]
+                                                1  ??? (BiomePubSub + 15132) [0x1c655bb1c]
+                                                  1  ??? (BiomePubSub + 15264) [0x1c655bba0]
+                                                    1  ??? (BiomePubSub + 23832) [0x1c655dd18]
+                                                      1  ??? (BiomePubSub + 23832) [0x1c655dd18]
+                                                        1  ??? (BiomePubSub + 24156) [0x1c655de5c]
+                                                          1  ??? (BiomePubSub + 12608) [0x1c655b140]
+                                                            1  ??? (BiomePubSub + 23880) [0x1c655dd48]
+                                                              1  ??? (CoreDuet + 1024756) [0x1a7e8e2f4]
+                                                                1  ??? (BiomeStreams + 1048448) [0x1a78b7f80]
+                                                                  1  ??? (BiomeStreams + 851980) [0x1a788800c]
+                                                                    1  ??? (ProtocolBuffer + 6860) [0x1c2851acc]
+                                                                      1  ??? (CoreDuet + 949392) [0x1a7e7bc90]
+                                                                        1  ??? (libobjc.A.dylib + 36312) [0x199120dd8]
+                                                                          1  <on behalf of UNKNOWN [31] (originated by UNKNOWN [31])>
+
+  Binary Images:
+           0x100d00000 -                ???  coreduetd               <D4D9504A-E90E-3B72-A908-B71A2BF90461>  /usr/libexec/coreduetd
+           0x199118000 -        0x199169bb3  libobjc.A.dylib         <A79BB6C8-1243-3B49-9DB1-500C3DA8E2A0>  /usr/lib/libobjc.A.dylib
+           0x1a3b3b000 -        0x1a3b80b3f  libdispatch.dylib       <C19E1CAE-FEE0-3E31-844D-A31BF2C39BD7>  /usr/lib/system/libdispatch.dylib
+           0x1a77b8000 -        0x1a7d42d1f  BiomeStreams            <17585D2E-0618-39A7-B495-C9F445CFDFF7>  /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
+           0x1a7d94000 -        0x1a7fc131f  CoreDuet                <A5EAD19D-13F6-3D53-82A0-0F4D50A8F247>  /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet
+           0x1c2850000 -        0x1c2869bff  ProtocolBuffer          <874A0D1F-1064-3655-A41D-E628DDD7F876>  /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
+           0x1c6558000 -        0x1c65b041f  BiomePubSub             <4DB903E3-30E6-37DF-987E-5B35333E0B47>  /System/Library/PrivateFrameworks/BiomePubSub.framework/BiomePubSub
+           0x2260c0000 -        0x2260cc413  libsystem_pthread.dylib <AA68F73A-2E65-3FC5-8374-977A97B0BA84>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   PerfPowerServicesSignpostReader
+UUID:             384846F3-5C39-37FA-A6D2-3EC69CE67D99
+Path:             /System/Library/PrivateFrameworks/PowerlogCore.framework/XPCServices/PerfPowerServicesSignpostReader.xpc/PerfPowerServicesSignpostReader
+Identifier:       com.apple.PerfPowerServicesSignpostReader
+Version:          1.0 (1)
+Resource Coalition: 1 sample "com.apple.powerlogHelperd"(718)
+On Behalf Of:     1 sample UNKNOWN [1125] (1 sample originated by UNKNOWN [442])
+Architecture:     arm64e
+Start time:       2026-07-22 04:37:53.579 +0900
+End time:         2026-07-22 04:37:53.579 +0900
+Num samples:      1 (50%)
+Primary state:    1 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Background, Override Thread QoS Unspecified, e-core
+User Activity:    1 samples Idle, 0 samples Active
+Power Source:     0 samples on Battery, 1 samples on AC
+  1  ??? (libsystem_pthread.dylib + 2732) [0x2260c0aac]
+    1  ??? (libsystem_pthread.dylib + 2572) [0x2260c0a0c]
+      1  ??? (libdispatch.dylib + 84576) [0x1a3b4fa60]
+        1  ??? (libdispatch.dylib + 86492) [0x1a3b501dc]
+          1  ??? (libdispatch.dylib + 44460) [0x1a3b45dac]
+            1  ??? (libdispatch.dylib + 41680) [0x1a3b452d0]
+              1  ??? (libdispatch.dylib + 112004) [0x1a3b56584]
+                1  ??? (libdispatch.dylib + 6828) [0x1a3b3caac]
+                  1  ??? (LoggingSupport + 35960) [0x1ba92dc78]
+                    1  ??? (LoggingSupport + 36588) [0x1ba92deec]
+                      1  ??? (LoggingSupport + 37564) [0x1ba92e2bc]
+                        1  ??? (LoggingSupport + 48284) [0x1ba930c9c]
+                          1  ??? (LoggingSupport + 50228) [0x1ba931434]
+                            1  ??? (LoggingSupport + 50408) [0x1ba9314e8]
+                              1  ??? (LoggingSupport + 42832) [0x1ba92f750]
+                                1  ??? (LoggingSupport + 55640) [0x1ba932958]
+                                  1  ??? (Foundation + 357148) [0x19a86731c]
+                                    1  ??? (Foundation + 357640) [0x19a867508]
+                                      1  ??? (Foundation + 357148) [0x19a86731c]
+                                        1  ??? (Foundation + 357492) [0x19a867474]
+                                          1  ??? (Foundation + 357148) [0x19a86731c]
+                                            1  ??? (Foundation + 357640) [0x19a867508]
+                                              1  ??? (Foundation + 357148) [0x19a86731c]
+                                                1  ??? (Foundation + 357492) [0x19a867474]
+                                                  1  ??? (Foundation + 363524) [0x19a868c04]
+                                                    1  ??? (Foundation + 358076) [0x19a8676bc]
+                                                      1  ??? (Foundation + 359064) [0x19a867a98]
+                                                        1  ??? (libobjc.A.dylib + 86856) [0x19912d348]
+                                                          1  ??? (libobjc.A.dylib + 9764) [0x19911a624]
+                                                            1  <on behalf of UNKNOWN [1125] (originated by UNKNOWN [442])>
+
+  Binary Images:
+           0x100644000 -                ???  com.apple.PerfPowerServicesSignpostReader 1.0 (1) <384846F3-5C39-37FA-A6D2-3EC69CE67D99>  /System/Library/PrivateFrameworks/PowerlogCore.framework/XPCServices/PerfPowerServicesSignpostReader.xpc/PerfPowerServicesSignpostReader
+           0x199118000 -        0x199169bb3  libobjc.A.dylib                                   <A79BB6C8-1243-3B49-9DB1-500C3DA8E2A0>  /usr/lib/libobjc.A.dylib
+           0x19a810000 -        0x19b48409f  Foundation                                        <42CADB85-DDBC-39F0-AC69-7B80A970829F>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1a3b3b000 -        0x1a3b80b3f  libdispatch.dylib                                 <C19E1CAE-FEE0-3E31-844D-A31BF2C39BD7>  /usr/lib/system/libdispatch.dylib
+           0x1ba925000 -        0x1ba9a683f  LoggingSupport                                    <B651083A-9AE2-3551-8501-B08FE40BAA7A>  /System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport
+           0x2260c0000 -        0x2260cc413  libsystem_pthread.dylib                           <AA68F73A-2E65-3FC5-8374-977A97B0BA84>  /usr/lib/system/libsystem_pthread.dylib
