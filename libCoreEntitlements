@@ -1,0 +1,828 @@
+{"duration_ms":"124629","share_with_app_devs":0,"roots_installed":0,"bug_type":"202","os_version":"iPhone OS 18.7.9 (22H355)","slice_uuid":"B2E006B3-6FB9-34C9-AFCE-E06E3F800A1D","is_first_party":0,"incident_id":"BC05CF7C-6736-431B-AB1A-F623D2529AEB","timestamp":"2026-07-29 09:11:58.00 +0900","app_name":"duetexpertd","name":"duetexpertd"}
+Date/Time:        2026-07-29 09:09:47.070 +0900
+End time:         2026-07-29 09:11:51.699 +0900
+OS Version:       iPhone OS 18.7.9 (Build 22H355)
+Architecture:     arm64e
+Report Version:   60
+Incident Identifier: BC05CF7C-6736-431B-AB1A-F623D2529AEB
+
+Data Source:      Microstackshots
+Shared Cache:     27B0CA49-348E-3C87-9F44-C9B8ACB8563F slid base address 0x184b28000, slide 0x4b28000
+
+Command:          duetexpertd
+Path:             /usr/libexec/duetexpertd
+Resource Coalition: "com.apple.duetexpertd"(291)
+On Behalf Of:     1 sample UNKNOWN [136] (1 sample originated by duetexpertd [4962])
+Architecture:     arm64e
+Parent:           launchd [1]
+PID:              4962
+
+Event:            cpu usage
+Action taken:     none
+CPU:              90 seconds cpu time over 125 seconds (72% cpu average), exceeding limit of 50% cpu over 180 seconds
+CPU limit:        90s
+Limit duration:   180s
+CPU used:         90s
+CPU duration:     125s
+Duration:         124.63s
+Duration Sampled: 112.29s (event starts 0.96s before samples, event ends 11.38s after samples)
+Steps:            37
+
+Hardware model:   iPhone11,2
+Active cpus:      6
+Memory size:      3.69 GB
+HW page size:     16384
+VM page size:     16384
+Shared cache residency: 13.18% (643.61 MB / 4882.75 MB)
+
+Time Since Boot:  71720s
+Time Awake Since Boot: 18803s
+Time Since Wake:  1844s
+
+Total CPU Time:   166.646s
+Advisory levels:  Battery -> 2, User -> 3, ThermalPressure -> 0, Combined -> 2
+Free disk space:  2335.57 MB/59.49 GB, low space threshold 150 MB
+Vnodes Available: 68.19% (13639/20000, 10000 allocated, 10000 soft limit)
+Models:           none
+
+Preferred User Language: zh-Hant-KR, ko-KR
+Country Code:     KR
+Keyboards:        zh_Hant-Pinyin Pinyin-Traditional, en_US QWERTY
+OS Cryptex File Extents: 1
+
+Heaviest stack for the target process:
+  15  ??? (libsystem_pthread.dylib + 2732) [0x211bd8aac]
+  11  ??? (libsystem_pthread.dylib + 2572) [0x211bd8a0c]
+  11  ??? (libdispatch.dylib + 84576) [0x18f667a60]
+  11  ??? (libdispatch.dylib + 86492) [0x18f6681dc]
+  11  ??? (libdispatch.dylib + 44512) [0x18f65dde0]
+  11  ??? (libdispatch.dylib + 41680) [0x18f65d2d0]
+  11  ??? (libdispatch.dylib + 112004) [0x18f66e584]
+  11  ??? (libdispatch.dylib + 6828) [0x18f654aac]
+  4   ??? (AppPredictionInternal + 2077784) [0x1d595f458]
+  4   ??? (AppPredictionInternal + 2654468) [0x1d59ec104]
+  4   ??? (AppPredictionInternal + 50240) [0x1d5770440]
+  4   ??? (AppPredictionInternal + 51352) [0x1d5770898]
+  4   ??? (AppPredictionInternal + 51668) [0x1d57709d4]
+  4   ??? (libdispatch.dylib + 71464) [0x18f664728]
+  4   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+  4   ??? (AppPredictionInternal + 182648) [0x1d5790978]
+  4   ??? (AppPredictionInternal + 68636) [0x1d5774c1c]
+  4   ??? (CoreDuet + 64724) [0x1938bbcd4]
+  4   ??? (CoreDuet + 68964) [0x1938bcd64]
+  4   ??? (libdispatch.dylib + 71464) [0x18f664728]
+  4   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+  4   ??? (CoreDuet + 71924) [0x1938bd8f4]
+  4   ??? (CoreDuet + 69452) [0x1938bcf4c]
+  4   ??? (CoreDuet + 72496) [0x1938bdb30]
+  4   ??? (CoreDuet + 87464) [0x1938c15a8]
+  4   ??? (CoreDuet + 90180) [0x1938c2044]
+  4   ??? (BiomePubSub + 15928) [0x1b2073e38]
+  4   ??? (BiomePubSub + 15132) [0x1b2073b1c]
+  4   ??? (BiomePubSub + 15264) [0x1b2073ba0]
+  4   ??? (BiomePubSub + 23832) [0x1b2075d18]
+  4   ??? (BiomePubSub + 23832) [0x1b2075d18]
+  4   ??? (BiomePubSub + 24156) [0x1b2075e5c]
+  3   ??? (BiomePubSub + 12528) [0x1b20730f0]
+  3   ??? (BiomePubSub + 23880) [0x1b2075d48]
+  2   ??? (CoreDuet + 1024756) [0x1939a62f4]
+  2   ??? (BiomeStreams + 1048448) [0x1933cff80]
+  2   ??? (BiomeStreams + 852000) [0x1933a0020]
+  2   ??? (BiomeStreams + 851332) [0x19339fd84]
+  2   ??? (CoreDuet + 750728) [0x193963488]
+  1   ??? (Foundation + 405720) [0x18638b0d8]
+  1   ??? (Foundation + 405788) [0x18638b11c]
+  1   ??? (Foundation + 406148) [0x18638b284]
+  1   ??? (libswiftCore.dylib + 1654416) [0x185ef4e90]
+  1   ??? (libswiftCore.dylib + 122412) [0x185d7ee2c]
+  1   ??? (libswiftCore.dylib + 3759736) [0x1860f6e78]
+  1   ??? (libsystem_malloc.dylib + 183456) [0x197d89ca0]
+
+
+Powerstats for:   duetexpertd [4962]
+UUID:             B2E006B3-6FB9-34C9-AFCE-E06E3F800A1D
+Path:             /usr/libexec/duetexpertd
+Resource Coalition: 15 samples "com.apple.duetexpertd"(291)
+On Behalf Of:     1 sample UNKNOWN [136] (1 sample originated by duetexpertd [4962])
+Architecture:     arm64e
+Parent:           launchd [1]
+UID:              501
+Sudden Term:      Tracked (allows idle exit)
+Footprint:        6464 KB -> 9936 KB (+3472 KB)
+Pageins:          1409 pages
+Start time:       2026-07-29 09:09:49.287 +0900
+End time:         2026-07-29 09:11:38.104 +0900
+Num samples:      15 (41%)
+Num threads:      5
+Primary state:    8 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Utility, Override Thread QoS Unspecified, e-core
+User Activity:    0 samples Idle, 15 samples Active
+Power Source:     15 samples on Battery, 0 samples on AC
+  15  ??? (libsystem_pthread.dylib + 2732) [0x211bd8aac]
+    11  ??? (libsystem_pthread.dylib + 2572) [0x211bd8a0c]
+      11  ??? (libdispatch.dylib + 84576) [0x18f667a60]
+        11  ??? (libdispatch.dylib + 86492) [0x18f6681dc]
+          11  ??? (libdispatch.dylib + 44512) [0x18f65dde0]
+            11  ??? (libdispatch.dylib + 41680) [0x18f65d2d0]
+              11  ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                11  ??? (libdispatch.dylib + 6828) [0x18f654aac]
+                  4   ??? (AppPredictionInternal + 2077784) [0x1d595f458]
+                    4   ??? (AppPredictionInternal + 2654468) [0x1d59ec104]
+                      4   ??? (AppPredictionInternal + 50240) [0x1d5770440]
+                        4   ??? (AppPredictionInternal + 51352) [0x1d5770898]
+                          4   ??? (AppPredictionInternal + 51668) [0x1d57709d4]
+                            4   ??? (libdispatch.dylib + 71464) [0x18f664728]
+                              4   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                4   ??? (AppPredictionInternal + 182648) [0x1d5790978]
+                                  4   ??? (AppPredictionInternal + 68636) [0x1d5774c1c]
+                                    4   ??? (CoreDuet + 64724) [0x1938bbcd4]
+                                      4   ??? (CoreDuet + 68964) [0x1938bcd64]
+                                        4   ??? (libdispatch.dylib + 71464) [0x18f664728]
+                                          4   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                            4   ??? (CoreDuet + 71924) [0x1938bd8f4]
+                                              4   ??? (CoreDuet + 69452) [0x1938bcf4c]
+                                                4   ??? (CoreDuet + 72496) [0x1938bdb30]
+                                                  4   ??? (CoreDuet + 87464) [0x1938c15a8]
+                                                    4   ??? (CoreDuet + 90180) [0x1938c2044]
+                                                      4   ??? (BiomePubSub + 15928) [0x1b2073e38]
+                                                        4   ??? (BiomePubSub + 15132) [0x1b2073b1c]
+                                                          4   ??? (BiomePubSub + 15264) [0x1b2073ba0]
+                                                            4   ??? (BiomePubSub + 23832) [0x1b2075d18]
+                                                              4   ??? (BiomePubSub + 23832) [0x1b2075d18]
+                                                                4   ??? (BiomePubSub + 24156) [0x1b2075e5c]
+                                                                  3   ??? (BiomePubSub + 12528) [0x1b20730f0]
+                                                                    3   ??? (BiomePubSub + 23880) [0x1b2075d48]
+                                                                      2   ??? (CoreDuet + 1024756) [0x1939a62f4]
+                                                                        2   ??? (BiomeStreams + 1048448) [0x1933cff80]
+                                                                          2   ??? (BiomeStreams + 852000) [0x1933a0020]
+                                                                            2   ??? (BiomeStreams + 851332) [0x19339fd84]
+                                                                              2   ??? (CoreDuet + 750728) [0x193963488]
+                                                                                1   ??? (Foundation + 405720) [0x18638b0d8]
+                                                                                  1   ??? (Foundation + 405788) [0x18638b11c]
+                                                                                    1   ??? (Foundation + 406148) [0x18638b284]
+                                                                                      1   ??? (libswiftCore.dylib + 1654416) [0x185ef4e90]
+                                                                                        1   ??? (libswiftCore.dylib + 122412) [0x185d7ee2c]
+                                                                                          1   ??? (libswiftCore.dylib + 3759736) [0x1860f6e78]
+                                                                                            1   ??? (libsystem_malloc.dylib + 183456) [0x197d89ca0]
+                                                                                              1   <Effective Thread QoS User Initiated>
+                                                                                1   ??? (Foundation + 405716) [0x18638b0d4]
+                                                                                  1   ??? (Foundation + 64292) [0x186337b24]
+                                                                                    1   ??? (libswiftCore.dylib + 2076560) [0x185f5bf90]
+                                                                                      1   ??? (libswiftCore.dylib + 2076008) [0x185f5bd68]
+                                                                                        1   ??? (CoreFoundation + 38648) [0x1876bb6f8]
+                                                                                          1   <Effective Thread QoS User Initiated>
+                                                                      1   ??? (CoreDuet + 1024856) [0x1939a6358]
+                                                                        1   ??? (libobjc.A.dylib + 7176) [0x184c31c08]
+                                                                          1   <Effective Thread QoS User Initiated>
+                                                                  1   ??? (libobjc.A.dylib + 7296) [0x184c31c80]
+                                                                    1   <Effective Thread QoS User Initiated>
+                  3   ??? (AppPredictionInternal + 2078248) [0x1d595f628]
+                    3   ??? (AppPredictionInternal + 2076708) [0x1d595f024]
+                      2   ??? (AppPredictionInternal + 2078496) [0x1d595f720]
+                        2   ??? (AppPredictionInternal + 71444) [0x1d5775714]
+                          2   ??? (AppPredictionInternal + 176464) [0x1d578f150]
+                            1   ??? (AppPredictionInternal + 177548) [0x1d578f58c]
+                              1   ??? (AppPredictionFoundation + 12248) [0x1d56edfd8]
+                                1   ??? (Foundation + 895040) [0x186402840]
+                                  1   ??? (Foundation + 896424) [0x186402da8]
+                                    1   ??? (Foundation + 915280) [0x186407750]
+                                      1   ??? (Foundation + 932492) [0x18640ba8c]
+                                        1   ??? (Foundation + 934948) [0x18640c424]
+                                          1   ??? (libsystem_kernel.dylib + 21828) [0x1d858e544]
+                            1   ??? (AppPredictionInternal + 177516) [0x1d578f56c]
+                              1   ??? (BiomePubSub + 11992) [0x1b2072ed8]
+                                1   ??? (BiomePubSub + 11548) [0x1b2072d1c]
+                                  1   ??? (BiomePubSub + 8088) [0x1b2071f98]
+                                    1   ??? (BiomeStreams + 27936) [0x1932d6d20]
+                                      1   ??? (BiomeStorage + 29228) [0x1b20d022c]
+                                        1   ??? (BiomeStorage + 30048) [0x1b20d0560]
+                                          1   ??? (BiomeStorage + 30836) [0x1b20d0874]
+                                            1   ??? (BiomeStorage + 42328) [0x1b20d3558]
+                                              1   ??? (ProactiveSupport + 7976) [0x1a8623f28]
+                                                1   ??? (ProactiveSupport + 7816) [0x1a8623e88]
+                                                  1   ??? (BiomeStorage + 43432) [0x1b20d39a8]
+                                                    1   ??? (BiomeStorage + 25700) [0x1b20cf464]
+                                                      1   ??? (BiomeStorage + 25228) [0x1b20cf28c]
+                                                        1   ??? (BiomeFoundation + 13832) [0x1b7d0a608]
+                                                          1   ??? (BiomeFoundation + 11268) [0x1b7d09c04]
+                                                            1   ??? (Foundation + 2614120) [0x1865a6368]
+                      1   ??? (AppPredictionInternal + 2078456) [0x1d595f6f8]
+                        1   ??? (AppPredictionInternal + 53184) [0x1d5770fc0]
+                          1   ??? (ProactiveSupport + 7976) [0x1a8623f28]
+                            1   ??? (ProactiveSupport + 7816) [0x1a8623e88]
+                              1   ??? (AppPredictionInternal + 141356) [0x1d578682c]
+                                1   ??? (AppPredictionInternal + 141864) [0x1d5786a28]
+                                  1   ??? (AppPredictionInternal + 29144) [0x1d576b1d8]
+                                    1   ??? (AppPredictionInternal + 32560) [0x1d576bf30]
+                                      1   ??? (libdispatch.dylib + 71132) [0x18f6645dc]
+                                        1   ??? (libdispatch.dylib + 72524) [0x18f664b4c]
+                                          1   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                            1   ??? (AppPredictionInternal + 30720) [0x1d576b800]
+                                              1   ??? (ProactiveSupport + 14668) [0x1a862594c]
+                                                1   ??? (ProactiveSupport + 15028) [0x1a8625ab4]
+                                                  1   ??? (ProactiveSupport + 15416) [0x1a8625c38]
+                                                    1   ??? (ProactiveSupport + 16408) [0x1a8626018]
+                                                      1   ??? (ProactiveSupport + 18732) [0x1a862692c]
+                                                        1   ??? (ProactiveSupport + 20784) [0x1a8627130]
+                                                          1   ??? (ProactiveSupport + 15416) [0x1a8625c38]
+                                                            1   ??? (ProactiveSupport + 19612) [0x1a8626c9c]
+                                                              1   ??? (libsqlite3.dylib + 177716) [0x1b5be7634]
+                                                                1   ??? (libsqlite3.dylib + 480916) [0x1b5c31694]
+                                                                  1   ??? (libsqlite3.dylib + 32196) [0x1b5bc3dc4]
+                                                                    1   ??? (libsqlite3.dylib + 33008) [0x1b5bc40f0]
+                                                                      1   ??? (libsqlite3.dylib + 35300) [0x1b5bc49e4]
+                                                                        1   ??? (libsqlite3.dylib + 43180) [0x1b5bc68ac]
+                                                                          1   ??? (libsqlite3.dylib + 109560) [0x1b5bd6bf8]
+                                                                            1   ??? (libsqlite3.dylib + 800284) [0x1b5c7f61c]
+                                                                              1   ??? (libsqlite3.dylib + 130820) [0x1b5bdbf04]
+                                                                                1   ??? (libsqlite3.dylib + 139564) [0x1b5bde12c]
+                                                                                  1   ??? (libsqlite3.dylib + 795872) [0x1b5c7e4e0]
+                                                                                    1   ??? (libsqlite3.dylib + 777944) [0x1b5c79ed8]
+                                                                                      1   ??? (libsqlite3.dylib + 777912) [0x1b5c79eb8]
+                                                                                        1   ??? (libsqlite3.dylib + 148928) [0x1b5be05c0]
+                                                                                          1   ??? (libsqlite3.dylib + 316464) [0x1b5c09430]
+                                                                                            1   ??? (ProactiveSupport + 354380) [0x1a867884c]
+                                                                                              1   ??? (ProactiveSupport + 353816) [0x1a8678618]
+                                                                                                1   ??? (Foundation + 210784) [0x18635b760]
+                                                                                                  1   ??? (CoreFoundation + 12248) [0x1876b4fd8]
+                                                                                                    1   ??? (CoreFoundation + 10716) [0x1876b49dc]
+                                                                                                      1   ??? (CoreFoundation + 34100) [0x1876ba534]
+                                                                                                        1   ??? (CoreFoundation + 35640) [0x1876bab38]
+                  2   ??? (AppPredictionInternal + 1804364) [0x1d591c84c]
+                    2   ??? (AppPredictionInternal + 2654468) [0x1d59ec104]
+                      2   ??? (AppPredictionInternal + 50240) [0x1d5770440]
+                        2   ??? (AppPredictionInternal + 51352) [0x1d5770898]
+                          2   ??? (AppPredictionInternal + 51668) [0x1d57709d4]
+                            2   ??? (libdispatch.dylib + 71464) [0x18f664728]
+                              2   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                2   ??? (AppPredictionInternal + 182648) [0x1d5790978]
+                                  2   ??? (AppPredictionInternal + 68636) [0x1d5774c1c]
+                                    2   ??? (CoreDuet + 64724) [0x1938bbcd4]
+                                      2   ??? (CoreDuet + 68964) [0x1938bcd64]
+                                        2   ??? (libdispatch.dylib + 71464) [0x18f664728]
+                                          2   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                            2   ??? (CoreDuet + 71924) [0x1938bd8f4]
+                                              2   ??? (CoreDuet + 69452) [0x1938bcf4c]
+                                                2   ??? (CoreDuet + 72496) [0x1938bdb30]
+                                                  2   ??? (CoreDuet + 87464) [0x1938c15a8]
+                                                    2   ??? (CoreDuet + 90180) [0x1938c2044]
+                                                      2   ??? (BiomePubSub + 15928) [0x1b2073e38]
+                                                        2   ??? (BiomePubSub + 15132) [0x1b2073b1c]
+                                                          2   ??? (BiomePubSub + 15264) [0x1b2073ba0]
+                                                            2   ??? (BiomePubSub + 23832) [0x1b2075d18]
+                                                              2   ??? (BiomePubSub + 23832) [0x1b2075d18]
+                                                                2   ??? (BiomePubSub + 24156) [0x1b2075e5c]
+                                                                  1   ??? (BiomePubSub + 12576) [0x1b2073120]
+                                                                    1   ??? (CoreDuet + 1024996) [0x1939a63e4]
+                                                                      1   ??? (Foundation + 357148) [0x18637f31c]
+                                                                        1   ??? (Foundation + 357492) [0x18637f474]
+                                                                          1   ??? (Foundation + 357148) [0x18637f31c]
+                                                                            1   ??? (Foundation + 357640) [0x18637f508]
+                                                                              1   ??? (Foundation + 357148) [0x18637f31c]
+                                                                                1   ??? (Foundation + 357492) [0x18637f474]
+                                                                                  1   ??? (Foundation + 363604) [0x186380c54]
+                                                                                    1   ??? (Foundation + 356764) [0x18637f19c]
+                                                                                      1   <Effective Thread QoS User Initiated, Requested Thread QoS Background>
+                                                                  1   ??? (BiomePubSub + 12528) [0x1b20730f0]
+                                                                    1   ??? (BiomePubSub + 23880) [0x1b2075d48]
+                                                                      1   ??? (CoreDuet + 1024756) [0x1939a62f4]
+                                                                        1   ??? (BiomeStreams + 1048448) [0x1933cff80]
+                                                                          1   ??? (BiomeStreams + 851980) [0x1933a000c]
+                                                                            1   ??? (ProtocolBuffer + 6860) [0x1ae369acc]
+                                                                              1   ??? (CoreDuet + 949392) [0x193993c90]
+                                                                                1   ??? (CoreDuet + 462620) [0x19391cf1c]
+                                                                                  1   ??? (libobjc.A.dylib + 186344) [0x184c5d7e8]
+                                                                                    1   <Effective Thread QoS User Initiated, Requested Thread QoS Background>
+                  1   ??? (AppPredictionInternal + 20376) [0x1d5768f98]
+                    1   ??? (AppPredictionInternal + 87344) [0x1d5779530]
+                      1   ??? (AppPredictionInternal + 87480) [0x1d57795b8]
+                        1   ??? (Foundation + 8852) [0x18632a294]
+                          1   ??? (CoreFoundation + 12248) [0x1876b4fd8]
+                            1   ??? (CoreFoundation + 10644) [0x1876b4994]
+                              1   ??? (CoreFoundation + 20924) [0x1876b71bc]
+                                1   ??? (CoreFoundation + 29212) [0x1876b921c]
+                                  1   ??? (CoreFoundation + 26908) [0x1876b891c]
+                                    1   ??? (libsystem_malloc.dylib + 76444) [0x197d6fa9c]
+                  1   ??? (ChronoServices + 511896) [0x1958f5f98]
+                    1   ??? (ChronoServices + 546592) [0x1958fe720]
+                      1   ??? (ChronoServices + 528348) [0x1958f9fdc]
+                        1   ??? (ChronoServices + 539772) [0x1958fcc7c]
+                          1   ??? (ChronoServices + 618312) [0x19590ff48]
+                            1   ??? (ChronoServices + 677760) [0x19591e780]
+                              1   ??? (ChronoServices + 194236) [0x1958a86bc]
+                                1   ??? (ChronoServices + 194556) [0x1958a87fc]
+                                  1   ??? (CoreFoundation + 600152) [0x187744858]
+                                    1   ??? (CoreFoundation + 122988) [0x1876d006c]
+                                      1   ??? (ChronoServices + 194676) [0x1958a8874]
+                                        1   ??? (ChronoServices + 214684) [0x1958ad69c]
+                                          1   ??? (libobjc.A.dylib + 7236) [0x184c31c44]
+                                            1   <on behalf of UNKNOWN [136] (originated by duetexpertd [4962]), Effective Thread QoS User Initiated, Requested Thread QoS User Initiated>
+    4   ??? (libsystem_pthread.dylib + 2512) [0x211bd89d0]
+      4   ??? (libdispatch.dylib + 83276) [0x18f66754c]
+        4   ??? (libdispatch.dylib + 81700) [0x18f666f24]
+          4   ??? (libdispatch.dylib + 229080) [0x18f68aed8]
+            4   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+              4   ??? (libdispatch.dylib + 6828) [0x18f654aac]
+                4   ??? (AppPredictionInternal + 2292240) [0x1d5993a10]
+                  3   ??? (AppPredictionInternal + 937332) [0x1d5848d74]
+                    2   ??? (AppPredictionInternal + 3653608) [0x1d5adffe8]
+                      2   ??? (AppPredictionInternal + 3200664) [0x1d5a71698]
+                        2   ??? (AppPredictionInternal + 3773664) [0x1d5afd4e0]
+                          2   ??? (AppPredictionInternal + 2653248) [0x1d59ebc40]
+                            2   ??? (AppPredictionInternal + 2660516) [0x1d59ed8a4]
+                              2   ??? (AppPredictionInternal + 50240) [0x1d5770440]
+                                2   ??? (AppPredictionInternal + 51352) [0x1d5770898]
+                                  2   ??? (AppPredictionInternal + 51668) [0x1d57709d4]
+                                    2   ??? (libdispatch.dylib + 71464) [0x18f664728]
+                                      2   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                        2   ??? (AppPredictionInternal + 182648) [0x1d5790978]
+                                          2   ??? (AppPredictionInternal + 68636) [0x1d5774c1c]
+                                            2   ??? (CoreDuet + 64724) [0x1938bbcd4]
+                                              2   ??? (CoreDuet + 68964) [0x1938bcd64]
+                                                2   ??? (libdispatch.dylib + 71464) [0x18f664728]
+                                                  2   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                                    2   ??? (CoreDuet + 71924) [0x1938bd8f4]
+                                                      2   ??? (CoreDuet + 69452) [0x1938bcf4c]
+                                                        2   ??? (CoreDuet + 72496) [0x1938bdb30]
+                                                          2   ??? (CoreDuet + 88064) [0x1938c1800]
+                                                            2   ??? (CoreData + 230072) [0x18f8ce2b8]
+                                                              2   ??? (libdispatch.dylib + 71464) [0x18f664728]
+                                                                2   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                                                  2   ??? (CoreData + 18904) [0x18f89a9d8]
+                                                                    1   ??? (CoreDuet + 1098124) [0x1939b818c]
+                                                                      1   ??? (CoreDuet + 1033324) [0x1939a846c]
+                                                                        1   ??? (CoreDuet + 1034548) [0x1939a8934]
+                                                                          1   ??? (CoreDuet + 1042368) [0x1939aa7c0]
+                                                                            1   ??? (CoreFoundation + 237392) [0x1876ebf50]
+                                                                              1   ??? (CoreFoundation + 156276) [0x1876d8274]
+                                                                    1   ??? (CoreDuet + 1097804) [0x1939b804c]
+                                                                      1   ??? (CoreData + 20476) [0x18f89affc]
+                                                                        1   ??? (CoreData + 27636) [0x18f89cbf4]
+                                                                          1   ??? (CoreData + 33860) [0x18f89e444]
+                                                                            1   ??? (CoreData + 1804652) [0x18fa4e96c]
+                                                                              1   ??? (CoreData + 40936) [0x18f89ffe8]
+                                                                                1   ??? (CoreData + 62180) [0x18f8a52e4]
+                                                                                  1   ??? (CoreData + 62972) [0x18f8a55fc]
+                                                                                    1   ??? (CoreData + 51100) [0x18f8a279c]
+                                                                                      1   ??? (CoreData + 50424) [0x18f8a24f8]
+                                                                                        1   ??? (libdispatch.dylib + 71464) [0x18f664728]
+                                                                                          1   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                                                                            1   ??? (CoreData + 50704) [0x18f8a2610]
+                                                                                              1   ??? (CoreData + 49060) [0x18f8a1fa4]
+                                                                                                1   ??? (CoreData + 51464) [0x18f8a2908]
+                                                                                                  1   ??? (CoreData + 64532) [0x18f8a5c14]
+                                                                                                    1   ??? (CoreData + 225580) [0x18f8cd12c]
+                                                                                                      1   ??? (CoreData + 195272) [0x18f8c5ac8]
+                                                                                                        1   ??? (CoreData + 191420) [0x18f8c4bbc]
+                                                                                                          1   ??? (CoreData + 192228) [0x18f8c4ee4]
+                                                                                                            1   ??? (libsqlite3.dylib + 176788) [0x1b5be7294]
+                                                                                                              1   ??? (libsqlite3.dylib + 215276) [0x1b5bf08ec]
+                                                                                                                1   ??? (libsqlite3.dylib + 673496) [0x1b5c606d8]
+                                                                                                                  1   ??? (libsqlite3.dylib + 678000) [0x1b5c61870]
+                                                                                                                    1   ??? (libsqlite3.dylib + 224900) [0x1b5bf2e84]
+                                                                                                                      1   ??? (libsqlite3.dylib + 691036) [0x1b5c64b5c]
+                                                                                                                        1   ??? (libsqlite3.dylib + 638320) [0x1b5c57d70]
+                                                                                                                          1   ??? (libsqlite3.dylib + 103700) [0x1b5bd5514]
+                                                                                                                            1   ??? (libsqlite3.dylib + 1064188) [0x1b5cbfcfc]
+                                                                                                                              1   ??? (libsqlite3.dylib + 105232) [0x1b5bd5b10]
+                                                                                                                                1   ??? (libsystem_kernel.dylib + 2892) [0x1d8589b4c]
+                    1   ??? (AppPredictionInternal + 3653720) [0x1d5ae0058]
+                      1   ??? (AppPredictionInternal + 3566556) [0x1d5acabdc]
+                        1   ??? (BiomePubSub + 13060) [0x1b2073304]
+                          1   ??? (BiomePubSub + 11548) [0x1b2072d1c]
+                            1   ??? (BiomePubSub + 8168) [0x1b2071fe8]
+                              1   ??? (BiomePubSub + 19352) [0x1b2074b98]
+                                1   ??? (BiomeFoundation + 109668) [0x1b7d21c64]
+                                  1   ??? (BiomePubSub + 37856) [0x1b20793e0]
+                                    1   ??? (AppPredictionInternal + 3573056) [0x1d5acc540]
+                                      1   ??? (Foundation + 84504) [0x18633ca18]
+                  1   ??? (AppPredictionInternal + 937448) [0x1d5848de8]
+                    1   ??? (AppPredictionInternal + 2961100) [0x1d5a36ecc]
+                      1   ??? (AppPredictionInternal + 3566556) [0x1d5acabdc]
+                        1   ??? (BiomePubSub + 13060) [0x1b2073304]
+                          1   ??? (BiomePubSub + 11548) [0x1b2072d1c]
+                            1   ??? (BiomePubSub + 8144) [0x1b2071fd0]
+                              1   ??? (AppPredictionInternal + 3566860) [0x1d5acad0c]
+                                1   ??? (AppPredictionInternal + 2871616) [0x1d5a21140]
+                                  1   ??? (AppPredictionInternal + 2936696) [0x1d5a30f78]
+                                    1   ??? (AppPredictionInternal + 152832) [0x1d5789500]
+                                      1   ??? (AppPredictionInternal + 46116) [0x1d576f424]
+                                        1   ??? (AppPredictionInternal + 46360) [0x1d576f518]
+                                          1   ??? (libdispatch.dylib + 71464) [0x18f664728]
+                                            1   ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                              1   ??? (AppPredictionInternal + 86752) [0x1d57792e0]
+                                                1   ??? (AppPredictionInternal + 87140) [0x1d5779464]
+                                                  1   ??? (ProactiveSupport + 14668) [0x1a862594c]
+                                                    1   ??? (ProactiveSupport + 15028) [0x1a8625ab4]
+                                                      1   ??? (ProactiveSupport + 15416) [0x1a8625c38]
+                                                        1   ??? (ProactiveSupport + 16772) [0x1a8626184]
+                                                          1   ??? (libsqlite3.dylib + 84364) [0x1b5bd098c]
+                                                            1   ??? (libsqlite3.dylib + 443580) [0x1b5c284bc]
+
+  Binary Images:
+           0x1024ac000 -                ???  duetexpertd             <B2E006B3-6FB9-34C9-AFCE-E06E3F800A1D>  /usr/libexec/duetexpertd
+           0x184c30000 -        0x184c81bb3  libobjc.A.dylib         <A79BB6C8-1243-3B49-9DB1-500C3DA8E2A0>  /usr/lib/libobjc.A.dylib
+           0x185d61000 -        0x1862ca35f  libswiftCore.dylib      <A35E0675-48C6-3ACF-B42A-4CD8431BD7F7>  /usr/lib/swift/libswiftCore.dylib
+           0x186328000 -        0x186f9c09f  Foundation              <42CADB85-DDBC-39F0-AC69-7B80A970829F>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1876b2000 -        0x187c2efff  CoreFoundation          <679DD35B-CF78-3910-8CA8-E879AA7B91DC>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x18f653000 -        0x18f698b3f  libdispatch.dylib       <C19E1CAE-FEE0-3E31-844D-A31BF2C39BD7>  /usr/lib/system/libdispatch.dylib
+           0x18f896000 -        0x18fc8e97f  CoreData                <27604DD2-5D7F-364B-9601-28D050FFB5A9>  /System/Library/Frameworks/CoreData.framework/CoreData
+           0x1932d0000 -        0x19385ad1f  BiomeStreams            <17585D2E-0618-39A7-B495-C9F445CFDFF7>  /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams
+           0x1938ac000 -        0x193ad931f  CoreDuet                <A5EAD19D-13F6-3D53-82A0-0F4D50A8F247>  /System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet
+           0x195879000 -        0x19599679f  ChronoServices          <167DD479-588E-3085-8535-570DE6100A7F>  /System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices
+           0x197d5d000 -        0x197d9cfef  libsystem_malloc.dylib  <03728D52-E548-3141-86D6-8244DC64DA61>  /usr/lib/system/libsystem_malloc.dylib
+           0x1a8622000 -        0x1a86ac4bf  ProactiveSupport        <74360B19-A4AB-3DF0-9072-DB24A221AEBD>  /System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport
+           0x1ae368000 -        0x1ae381bff  ProtocolBuffer          <874A0D1F-1064-3655-A41D-E628DDD7F876>  /System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer
+           0x1b2070000 -        0x1b20c841f  BiomePubSub             <4DB903E3-30E6-37DF-987E-5B35333E0B47>  /System/Library/PrivateFrameworks/BiomePubSub.framework/BiomePubSub
+           0x1b20c9000 -        0x1b210763f  BiomeStorage            <6C0E1856-CEB9-3001-A2F3-2EFBDFDDF423>  /System/Library/PrivateFrameworks/BiomeStorage.framework/BiomeStorage
+           0x1b5bbc000 -        0x1b5d3c683  libsqlite3.dylib        <662E6C63-0D76-377F-B339-B04AA884117C>  /usr/lib/libsqlite3.dylib
+           0x1b7d07000 -        0x1b7d5777f  BiomeFoundation         <AF8ED274-1B96-32F8-9B1A-5CFD585E4EB7>  /System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation
+           0x1d56eb000 -        0x1d5702eff  AppPredictionFoundation <F17579F8-43EB-387C-8645-CCCA03078663>  /System/Library/PrivateFrameworks/AppPredictionFoundation.framework/AppPredictionFoundation
+           0x1d5764000 -        0x1d5db1abf  AppPredictionInternal   <BAB71DE0-559C-3E6C-837E-1AB263F3865F>  /System/Library/PrivateFrameworks/AppPredictionInternal.framework/AppPredictionInternal
+           0x1d8589000 -        0x1d85c2e6f  libsystem_kernel.dylib  <883C62A5-410A-36AF-BDEC-4D95CFD85830>  /usr/lib/system/libsystem_kernel.dylib
+           0x211bd8000 -        0x211be4413  libsystem_pthread.dylib <AA68F73A-2E65-3FC5-8374-977A97B0BA84>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   backboardd
+UUID:             D62B7F32-93F4-385F-AAFF-01059FFCC1CF
+Path:             /usr/libexec/backboardd
+Resource Coalition: 6 samples "com.apple.backboardd"(79)
+Architecture:     arm64e
+Start time:       2026-07-29 09:09:48.030 +0900
+End time:         2026-07-29 09:11:40.315 +0900
+Num samples:      6 (16%)
+Primary state:    6 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified, e-core
+User Activity:    0 samples Idle, 6 samples Active
+Power Source:     6 samples on Battery, 0 samples on AC
+  4  ??? (libsystem_pthread.dylib + 2744) [0x211bd8ab8]
+    4  ??? (libsystem_pthread.dylib + 13124) [0x211bdb344]
+      4  ??? (QuartzCore + 3014316) [0x189518eac]
+        2  ??? (QuartzCore + 2963876) [0x18950c9a4]
+          2  ??? (CoreFoundation + 574616) [0x18773e498]
+            2  ??? (CoreFoundation + 72204) [0x1876c3a0c]
+              2  ??? (CoreFoundation + 66464) [0x1876c23a0]
+                2  ??? (CoreFoundation + 74360) [0x1876c4278]
+                  2  ??? (CoreFoundation + 76096) [0x1876c4940]
+                    2  ??? (CoreFoundation + 73740) [0x1876c400c]
+                      2  ??? (QuartzCore + 7904) [0x18923aee0]
+                        2  ??? (QuartzCore + 11248) [0x18923bbf0]
+                          2  ??? (QuartzCore + 145292) [0x18925c78c]
+                            2  ??? (QuartzCore + 611048) [0x1892ce2e8]
+                              2  ??? (QuartzCore + 596192) [0x1892ca8e0]
+                                2  ??? (BlockMonitoring + 3912) [0x24bc99f48]
+                                  2  ??? (BlockMonitoring + 4456) [0x24bc9a168]
+                                    2  ??? (QuartzCore + 618356) [0x1892cff74]
+                                      2  ??? (Metal + 12952) [0x187213298]
+                                        2  ??? (libdispatch.dylib + 72524) [0x18f664b4c]
+                                          2  ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                            2  ??? (Metal + 13020) [0x1872132dc]
+                                              2  ??? (Metal + 13552) [0x1872134f0]
+                                                2  ??? (IOGPU + 11072) [0x220cf5b40]
+                                                  2  ??? (IOGPU + 11472) [0x220cf5cd0]
+                                                    2  ??? (IOKit + 202784) [0x190228820]
+        2  ??? (QuartzCore + 15676) [0x18923cd3c]
+          2  ??? (libsystem_kernel.dylib + 16640) [0x1d858d100]
+            2  ??? (libsystem_kernel.dylib + 17080) [0x1d858d2b8]
+              2  ??? (libsystem_kernel.dylib + 3300) [0x1d8589ce4]
+  2  ??? (libsystem_pthread.dylib + 2732) [0x211bd8aac]
+    2  ??? (libsystem_pthread.dylib + 2572) [0x211bd8a0c]
+      1  ??? (libdispatch.dylib + 84576) [0x18f667a60]
+        1  ??? (libdispatch.dylib + 86492) [0x18f6681dc]
+          1  ??? (libdispatch.dylib + 49392) [0x18f65f0f0]
+            1  ??? (libdispatch.dylib + 44512) [0x18f65dde0]
+              1  ??? (libdispatch.dylib + 41272) [0x18f65d138]
+                1  ??? (libdispatch.dylib + 98336) [0x18f66b020]
+                  1  ??? (libdispatch.dylib + 103240) [0x18f66c348]
+                    1  ??? (libdispatch.dylib + 25952) [0x18f659560]
+                      1  ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                        1  ??? (MultitouchSupport + 15648) [0x22a843d20]
+                          1  ??? (MultitouchSupport + 48056) [0x22a84bbb8]
+                            1  ??? (MultitouchSupport + 53320) [0x22a84d048]
+                              1  ??? (MultitouchSupport + 54708) [0x22a84d5b4]
+                                1  ??? (MultitouchSupport + 82516) [0x22a854254]
+                                  1  ??? (MultitouchHID + 273216) [0x243b73b40]
+                                    1  ??? (MultitouchHID + 24276) [0x243b36ed4]
+                                      1  ??? (MultitouchHID + 20200) [0x243b35ee8]
+                                        1  ??? (MultitouchHID + 14436) [0x243b34864]
+                                          1  ??? (IOKit + 20972) [0x1901fc1ec]
+                                            1  ??? (IOKit + 59580) [0x1902058bc]
+                                              1  ??? (IOKit + 68004) [0x1902079a4]
+                                                1  ??? (BackBoardHIDEventFoundation + 6776) [0x1d4564a78]
+                                                  1  ??? (BackBoardHIDEventFoundation + 7588) [0x1d4564da4]
+                                                    1  ??? (BackBoardHIDEventFoundation + 8984) [0x1d4565318]
+                                                      1  ??? (BackBoardHIDEventFoundation + 5268) [0x1d4564494]
+                                                        1  ??? (backboardd + 42900) [0x104bd6794]
+                                                          1  ??? (backboardd + 42012) [0x104bd641c]
+                                                            1  ??? (libdispatch.dylib + 72524) [0x18f664b4c]
+                                                              1  ??? (libdispatch.dylib + 112004) [0x18f66e584]
+                                                                1  ??? (backboardd + 23216) [0x104bd1ab0]
+                                                                  1  ??? (backboardd + 26544) [0x104bd27b0]
+                                                                    1  ??? (backboardd + 48136) [0x104bd7c08]
+                                                                      1  ??? (backboardd + 63084) [0x104bdb66c]
+                                                                        1  ??? (backboardd + 64368) [0x104bdbb70]
+                                                                          1  ??? (backboardd + 67100) [0x104bdc61c]
+                                                                            1  ??? (backboardd + 67036) [0x104bdc5dc]
+                                                                              1  ??? (QuartzCore + 694740) [0x1892e29d4]
+                                                                                1  ??? (QuartzCore + 694568) [0x1892e2928]
+                                                                                  1  ??? (QuartzCore + 695148) [0x1892e2b6c]
+      1  ??? (libdispatch.dylib + 84548) [0x18f667a44]
+        1  ??? (libdispatch.dylib + 147684) [0x18f6770e4]
+          1  ??? (libdispatch.dylib + 239308) [0x18f68d6cc]
+
+  Binary Images:
+           0x104bcc000 -                ???  backboardd                  <D62B7F32-93F4-385F-AAFF-01059FFCC1CF>  /usr/libexec/backboardd
+           0x187210000 -        0x18746a67f  Metal                       <E8858C32-0ECD-3A4A-B9CB-83867E841836>  /System/Library/Frameworks/Metal.framework/Metal
+           0x1876b2000 -        0x187c2efff  CoreFoundation              <679DD35B-CF78-3910-8CA8-E879AA7B91DC>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x189239000 -        0x1895f36bf  QuartzCore                  <77F65492-8AC1-3C75-BC4F-46F18ADF5286>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x18f653000 -        0x18f698b3f  libdispatch.dylib           <C19E1CAE-FEE0-3E31-844D-A31BF2C39BD7>  /usr/lib/system/libdispatch.dylib
+           0x1901f7000 -        0x1902bbc1f  IOKit                       <F4F8ED0E-3429-33F9-B810-8817BB4A5F32>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1d4563000 -        0x1d459391f  BackBoardHIDEventFoundation <C7214086-4F38-3CD9-BF9A-5FE0DCFE386C>  /System/Library/PrivateFrameworks/BackBoardHIDEventFoundation.framework/BackBoardHIDEventFoundation
+           0x1d8589000 -        0x1d85c2e6f  libsystem_kernel.dylib      <883C62A5-410A-36AF-BDEC-4D95CFD85830>  /usr/lib/system/libsystem_kernel.dylib
+           0x211bd8000 -        0x211be4413  libsystem_pthread.dylib     <AA68F73A-2E65-3FC5-8374-977A97B0BA84>  /usr/lib/system/libsystem_pthread.dylib
+           0x220cf3000 -        0x220d3323f  IOGPU                       <FEE5C549-A8F4-3E82-8A22-8931117DEE18>  /System/Library/PrivateFrameworks/IOGPU.framework/IOGPU
+           0x22a840000 -        0x22a874a7f  MultitouchSupport           <8A4AEE91-59D4-34D1-96EC-B31ADB6C335E>  /System/Library/PrivateFrameworks/MultitouchSupport.framework/MultitouchSupport
+           0x243b31000 -        0x243b9291f  MultitouchHID               <72F808E4-3D96-3195-BC76-7CD0BFCF3702>  /System/Library/Extensions/AppleMultitouchSPI.kext/PlugIns/MultitouchHID.plugin/MultitouchHID
+           0x24bc99000 -        0x24bca029f  BlockMonitoring             <7BC8D5BF-37CB-3A6D-A3F3-19F460777A43>  /System/Library/PrivateFrameworks/BlockMonitoring.framework/BlockMonitoring
+
+
+Powerstats for:   kernel_task
+UUID:             BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38
+Version:          Darwin Kernel Version 24.6.0: Wed Apr 29 20:45:33 PDT 2026; root:xnu-11417.140.69.706.24~1/RELEASE_ARM64_T8020
+Resource Coalition: 4 samples 1
+Architecture:     arm64
+Start time:       2026-07-29 09:10:09.125 +0900
+End time:         2026-07-29 09:11:36.533 +0900
+Num samples:      4 (11%)
+Primary state:    4 samples Non-Frontmost App, Non-Suppressed, Kernel mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified, e-core
+User Activity:    0 samples Idle, 4 samples Active
+Power Source:     4 samples on Battery, 0 samples on AC
+ *4  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7273360) [0xfffffff008533b90]
+   *4  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7270880) [0xfffffff0085331e0]
+     *3  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7285548) [0xfffffff008536b2c]
+       *1  ??? (AppleHIDTransportSPI + 97052) [0xfffffff008e5ccec]
+         *1  ??? (AppleHIDTransportSPI + 114748) [0xfffffff008e6120c]
+           *1  ??? (AppleHIDTransportSPI + 95372) [0xfffffff008e5c65c]
+             *1  ??? (AppleHIDTransportSPI + 95716) [0xfffffff008e5c7b4]
+               *1  ??? (AppleHIDTransportSPI + 171000) [0xfffffff008e6edc8]
+                 *1  ??? (AppleARMPlatform + 190876) [0xfffffff008803b0c]
+                   *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7290152) [0xfffffff008537d28]
+                     *1  ??? (AppleARMPlatform + 185228) [0xfffffff0088024fc]
+                       *1  ??? (AppleSamsungSPI + 5216) [0xfffffff009472970]
+                         *1  ??? (AppleSamsungSPI + 5916) [0xfffffff009472c2c]
+                           *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7302256) [0xfffffff00853ac70]
+                             *1  ??? (AppleSmartIO2 + 26952) [0xfffffff0094a5238]
+                               *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7325876) [0xfffffff0085408b4]
+                                 *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7332184) [0xfffffff008542158]
+                                   *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7392144) [0xfffffff008550b90]
+                                     *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7394400) [0xfffffff008551460]
+                                       *1  ??? (IODARTFamily + 38080) [0xfffffff009a77fb0]
+                                         *1  ??? (IODARTFamily + 39856) [0xfffffff009a786a0]
+                                           *1  ??? (IODARTFamily + 43268) [0xfffffff009a793f4]
+                                             *1  ??? (IODARTFamily + 44452) [0xfffffff009a79894]
+                                               *1  ??? (AppleT8020DART + 17584) [0xfffffff009533980]
+                                                 *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 1618836) [0xfffffff007fcf394]
+                                                   *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 35432) [0xfffffff007e4ca68]
+                                                     *1  ??? [0xfffffff00863c0bc]
+                                                       *1  ??? [0xfffffff00864e0a0]
+                                                         *1  ??? [0xfffffff00864ca14]
+                                                           *1  ??? [0xfffffff00864eb10]
+       *1  ??? (AppleHIDTransportSPI + 96776) [0xfffffff008e5cbd8]
+         *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 6453028) [0xfffffff00846b724]
+       *1  ??? (AppleHIDTransportSPI + 48668) [0xfffffff008e50fec]
+     *1  ??? (IOSlaveProcessor + 4484) [0xfffffff009caacb4]
+       *1  ??? (AppleSmartIO2 + 2600) [0xfffffff00949f318]
+         *1  ??? (AppleSmartIO2 + 35036) [0xfffffff0094a71cc]
+           *1  ??? (AppleSmartIO2 + 35544) [0xfffffff0094a73c8]
+             *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7331216) [0xfffffff008541d90]
+               *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7391724) [0xfffffff0085509ec]
+                 *1  ??? (<BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38> + 7373344) [0xfffffff00854c220]
+                   *1  ??? (IODARTFamily + 45244) [0xfffffff009a79bac]
+                     *1  ??? (IODARTFamily + 46012) [0xfffffff009a79eac]
+                       *1  ??? (IODARTFamily + 35132) [0xfffffff009a7742c]
+
+  Binary Images:
+   *0xfffffff007e44000 - 0xfffffff00862ffff  ??? (24.6.0)                                   <BF15F5C4-2EE0-3B81-AED2-FBF7CD264A38>__TEXT_EXEC
+   *0xfffffff0087d5170 - 0xfffffff00882a35b  com.apple.driver.AppleARMPlatform (1.0.2)      <20FE7225-0128-312E-A3B5-018373D802CB>__TEXT_EXEC  /System/Library/Extensions/AppleARMPlatform.kext/AppleARMPlatform
+   *0xfffffff008e451d0 - 0xfffffff008e88a23  com.apple.driver.AppleHIDTransportSPI (8150.1) <B10DC01E-66F0-39F5-A82E-EF30DE5D1DDF>__TEXT_EXEC  /System/Library/Extensions/AppleHIDTransport.kext/PlugIns/AppleHIDTransportSPI.kext/AppleHIDTransportSPI
+   *0xfffffff009471510 - 0xfffffff009477713  com.apple.driver.AppleSamsungSPI (1)           <3F242864-BF57-3662-84F5-8D787F3530DF>__TEXT_EXEC  /System/Library/Extensions/AppleSamsungSPI.kext/AppleSamsungSPI
+   *0xfffffff00949e8f0 - 0xfffffff0094ab24b  com.apple.driver.AppleSmartIO2 (1)             <C6482C38-8720-3C44-BB3F-66E140226BCE>__TEXT_EXEC  /System/Library/Extensions/AppleSmartIO2.kext/AppleSmartIO2
+   *0xfffffff00952f4d0 - 0xfffffff009536fc3  com.apple.driver.AppleT8020DART (1)            <C34D50B6-E456-35F9-A91F-1870945F04DE>__TEXT_EXEC  /System/Library/Extensions/AppleT8020DART.kext/AppleT8020DART
+   *0xfffffff009a6eaf0 - 0xfffffff009a827c7  com.apple.driver.IODARTFamily (1)              <D54252F3-9B52-3E0C-A8CA-676CA5993969>__TEXT_EXEC  /System/Library/Extensions/IODARTFamily.kext/IODARTFamily
+   *0xfffffff009ca9b30 - 0xfffffff009cab4c3  com.apple.driver.IOSlaveProcessor (1)          <543B36CD-B0AD-3851-BC44-A7599B1B1E07>__TEXT_EXEC  /System/Library/Extensions/IOSlaveProcessor.kext/IOSlaveProcessor
+
+
+Powerstats for:   Preferences (Settings)
+UUID:             CE7A692D-BDCC-3BE9-AF37-A05546EE2E02
+Path:             /Applications/Preferences.app/Preferences
+Identifier:       com.apple.Preferences
+Version:          1 (1308.5.1.4.1)
+Is First Party:   Yes
+Beta Identifier:  C8F56A07-591C-4183-AA5D-E4DBD094A8EE
+Resource Coalition: 4 samples "com.apple.Preferences"(1188)
+Architecture:     arm64e
+Start time:       2026-07-29 09:10:04.621 +0900
+End time:         2026-07-29 09:11:22.840 +0900
+Num samples:      4 (11%)
+Primary state:    4 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS User Interactive, Requested Thread QoS User Interactive, Override Thread QoS Unspecified, e-core
+User Activity:    0 samples Idle, 4 samples Active
+Power Source:     4 samples on Battery, 0 samples on AC
+  4  ??? (dyld + 257800) [0x1ae1b6f08]
+    4  ??? (Preferences + 23056) [0x102c59a10]
+      4  ??? (SwiftUI + 36560) [0x18befbed0]
+        4  ??? (SwiftUI + 36892) [0x18befc01c]
+          4  ??? (SwiftUI + 3159972) [0x18c1f67a4]
+            4  ??? (UIKitCore + 1051176) [0x18a0b0a28]
+              4  ??? (UIKitCore + 1266084) [0x18a0e51a4]
+                4  ??? (GraphicsServices + 5204) [0x1d4551454]
+                  4  ??? (CoreFoundation + 72204) [0x1876c3a0c]
+                    2  ??? (CoreFoundation + 65104) [0x1876c1e50]
+                      2  ??? (CoreFoundation + 62672) [0x1876c14d0]
+                        2  ??? (CoreFoundation + 63092) [0x1876c1674]
+                          2  ??? (CoreFoundation + 63580) [0x1876c185c]
+                            2  ??? (UIKitCore + 16868) [0x189fb41e4]
+                              2  ??? (UIKitCore + 35508) [0x189fb8ab4]
+                                2  ??? (UIKitCore + 37892) [0x189fb9404]
+                                  1  ??? (UIKitCore + 40460) [0x189fb9e0c]
+                                    1  ??? (UIKitCore + 40560) [0x189fb9e70]
+                                      1  ??? (QuartzCore + 88376) [0x18924e938]
+                                        1  ??? (QuartzCore + 89280) [0x18924ecc0]
+                                          1  ??? (QuartzCore + 92152) [0x18924f7f8]
+                                            1  ??? (QuartzCore + 83604) [0x18924d694]
+                                              1  ??? (QuartzCore + 717952) [0x1892e8480]
+                                                1  ??? (QuartzCore + 720600) [0x1892e8ed8]
+                                                  1  ??? (QuartzCore + 720872) [0x1892e8fe8]
+                                                    1  ??? (UIKitCore + 21112240) [0x18b3d25b0]
+                                                      1  ??? (UIKitCore + 21113044) [0x18b3d28d4]
+                                                        1  ??? (UIKitCore + 1071128) [0x18a0b5818]
+                                                          1  ??? (UIKitCore + 21106972) [0x18b3d111c]
+                                                            1  ??? (UIKitCore + 21108384) [0x18b3d16a0]
+                                                              1  ??? (UIFoundation + 119292) [0x1931581fc]
+                                                                1  ??? (UIFoundation + 524996) [0x1931bb2c4]
+                                                                  1  ??? (CoreText + 64188) [0x189603abc]
+                                                                    1  ??? (CoreText + 69792) [0x1896050a0]
+                                                                      1  ??? (CoreText + 315492) [0x189641064]
+                                                                        1  ??? (CoreGraphics + 534496) [0x18986d7e0]
+                                                                          1  ??? (CoreGraphics + 534124) [0x18986d66c]
+                                                                            1  ??? (libFontParser.dylib + 31464) [0x1b9e1aae8]
+                                                                              1  ??? (libFontParser.dylib + 1796880) [0x1b9fc9b10]
+                                                                                1  ??? (libFontParser.dylib + 1498108) [0x1b9f80bfc]
+                                                                                  1  <p-core>
+                                  1  ??? (QuartzCore + 66404) [0x189249364]
+                                    1  ??? (QuartzCore + 64968) [0x189248dc8]
+                                      1  ??? (QuartzCore + 66000) [0x1892491d0]
+                                        1  ??? (UIKitCore + 17966512) [0x18b0d25b0]
+                                          1  ??? (UIKitCore + 17966260) [0x18b0d24b4]
+                                            1  ??? (QuartzCore + 79952) [0x18924c850]
+                                              1  ??? (QuartzCore + 81708) [0x18924cf2c]
+                                                1  ??? (libsystem_malloc.dylib + 76700) [0x197d6fb9c]
+                    1  ??? (CoreFoundation + 66464) [0x1876c23a0]
+                      1  ??? (CoreFoundation + 74360) [0x1876c4278]
+                        1  ??? (CoreFoundation + 76096) [0x1876c4940]
+                          1  ??? (CoreFoundation + 73740) [0x1876c400c]
+                            1  ??? (QuartzCore + 7904) [0x18923aee0]
+                              1  ??? (QuartzCore + 32892) [0x18924107c]
+                                1  ??? (UIKitCore + 19976) [0x189fb4e08]
+                                  1  ??? (UIKitCore + 20264) [0x189fb4f28]
+                    1  ??? (CoreFoundation + 65472) [0x1876c1fc0]
+                      1  ??? (CoreFoundation + 71376) [0x1876c36d0]
+                        1  ??? (libsystem_kernel.dylib + 16640) [0x1d858d100]
+                          1  ??? (libsystem_kernel.dylib + 17080) [0x1d858d2b8]
+                            1  ??? (libsystem_kernel.dylib + 3300) [0x1d8589ce4]
+
+  Binary Images:
+           0x102c54000 -                ???  com.apple.Preferences 1 (1308.5.1.4.1) <CE7A692D-BDCC-3BE9-AF37-A05546EE2E02>  /Applications/Preferences.app/Preferences
+           0x1876b2000 -        0x187c2efff  CoreFoundation                         <679DD35B-CF78-3910-8CA8-E879AA7B91DC>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x189239000 -        0x1895f36bf  QuartzCore                             <77F65492-8AC1-3C75-BC4F-46F18ADF5286>  /System/Library/Frameworks/QuartzCore.framework/QuartzCore
+           0x1895f4000 -        0x1897eae7f  CoreText                               <EA4D5D45-22B5-312A-AA27-E4AAAE16B19B>  /System/Library/Frameworks/CoreText.framework/CoreText
+           0x1897eb000 -        0x189ef3d5f  CoreGraphics                           <BB2B6BE1-FC0A-33DE-8CD9-E4DAB19122F2>  /System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+           0x189fb0000 -        0x18bef23df  UIKitCore                              <7C334577-517A-3DE9-9F2F-58123A3B9217>  /System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore
+           0x18bef3000 -        0x18d1767bf  SwiftUI                                <D62ACC4D-C51E-34D9-9670-19604C6400AA>  /System/Library/Frameworks/SwiftUI.framework/SwiftUI
+           0x19313b000 -        0x19329d77f  UIFoundation                           <DC56D92A-5990-36F3-A2FE-BD139FC97A01>  /System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+           0x197d5d000 -        0x197d9cfef  libsystem_malloc.dylib                 <03728D52-E548-3141-86D6-8244DC64DA61>  /usr/lib/system/libsystem_malloc.dylib
+           0x1ae178000 -        0x1ae212877  dyld                                   <37F85FE9-F9EC-3E94-85A8-DA37F736A6CE>  /usr/lib/dyld
+           0x1b9e13000 -        0x1ba0cb23f  libFontParser.dylib                    <F350AC7D-3E70-3ECF-9137-974178290EF9>  /System/Library/PrivateFrameworks/FontServices.framework/libFontParser.dylib
+           0x1d4550000 -        0x1d4558c7f  GraphicsServices                       <6F98303A-8A76-36DD-9B51-0AD06FE5335E>  /System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices
+           0x1d8589000 -        0x1d85c2e6f  libsystem_kernel.dylib                 <883C62A5-410A-36AF-BDEC-4D95CFD85830>  /usr/lib/system/libsystem_kernel.dylib
+
+
+Powerstats for:   AccessibilityUIServer
+UUID:             58F6B17B-5804-3A26-94EC-934DADE82FD1
+Path:             /System/Library/CoreServices/AccessibilityUIServer.app/AccessibilityUIServer
+Identifier:       com.apple.AccessibilityUIServer
+Version:          1.0 (1)
+Is First Party:   Yes
+Beta Identifier:  C8F56A07-591C-4183-AA5D-E4DBD094A8EE
+Resource Coalition: 2 samples "com.apple.AccessibilityUIServer"(257)
+On Behalf Of:     1 sample backboardd [68] (1 sample originated by backboardd [68])
+Architecture:     arm64e
+Start time:       2026-07-29 09:10:04.842 +0900
+End time:         2026-07-29 09:10:32.138 +0900
+Num samples:      2 (5%)
+Primary state:    2 samples Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Unspecified, Requested Thread QoS Unspecified, Override Thread QoS Unspecified, e-core
+User Activity:    0 samples Idle, 2 samples Active
+Power Source:     2 samples on Battery, 0 samples on AC
+  2  ??? (libsystem_pthread.dylib + 2744) [0x211bd8ab8]
+    2  ??? (libsystem_pthread.dylib + 13124) [0x211bdb344]
+      1  ??? (CoreMotion + 28236) [0x194e9ee4c]
+        1  ??? (CoreFoundation + 574616) [0x18773e498]
+          1  ??? (CoreFoundation + 72204) [0x1876c3a0c]
+            1  ??? (CoreFoundation + 66464) [0x1876c23a0]
+              1  ??? (CoreFoundation + 74360) [0x1876c4278]
+                1  ??? (CoreFoundation + 76096) [0x1876c4940]
+                  1  ??? (CoreFoundation + 73740) [0x1876c400c]
+                    1  ??? (IOKit + 5464) [0x1901f8558]
+                      1  ??? (CoreMotion + 8548) [0x194e9a164]
+                        1  ??? (CoreMotion + 127252) [0x194eb7114]
+                          1  ??? (CoreMotion + 131520) [0x194eb81c0]
+                            1  ??? (CoreMotion + 131932) [0x194eb835c]
+                              1  ??? (CoreMotion + 11832) [0x194e9ae38]
+                                1  ??? (CoreMotion + 132824) [0x194eb86d8]
+                                  1  ??? (Foundation + 798288) [0x1863eae50]
+                                    1  ??? (Foundation + 380228) [0x186384d44]
+                                      1  ??? (Foundation + 375980) [0x186383cac]
+                                        1  ??? (libobjc.A.dylib + 7208) [0x184c31c28]
+      1  ??? (Foundation + 481284) [0x18639d804]
+        1  ??? (AccessibilityUtilities + 28492) [0x1920aaf4c]
+          1  ??? (AccessibilityUtilities + 28688) [0x1920ab010]
+            1  ??? (Foundation + 63388) [0x18633779c]
+              1  ??? (CoreFoundation + 72204) [0x1876c3a0c]
+                1  ??? (CoreFoundation + 66464) [0x1876c23a0]
+                  1  ??? (CoreFoundation + 74360) [0x1876c4278]
+                    1  ??? (CoreFoundation + 76096) [0x1876c4940]
+                      1  ??? (CoreFoundation + 73740) [0x1876c400c]
+                        1  ??? (IOKit + 30048) [0x1901fe560]
+                          1  ??? (IOKit + 112392) [0x190212708]
+                            1  ??? (IOKit + 91704) [0x19020d638]
+                              1  ??? (IOKit + 547596) [0x19027cb0c]
+                                1  ??? (IOKit + 604004) [0x19028a764]
+                                  1  ??? (IOKit + 22220) [0x1901fc6cc]
+                                    1  ??? (libsystem_kernel.dylib + 2904) [0x1d8589b58]
+                                      1  <on behalf of backboardd [68] (originated by backboardd [68])>
+
+  Binary Images:
+           0x1024a4000 -                ???  com.apple.AccessibilityUIServer 1.0 (1) <58F6B17B-5804-3A26-94EC-934DADE82FD1>  /System/Library/CoreServices/AccessibilityUIServer.app/AccessibilityUIServer
+           0x184c30000 -        0x184c81bb3  libobjc.A.dylib                         <A79BB6C8-1243-3B49-9DB1-500C3DA8E2A0>  /usr/lib/libobjc.A.dylib
+           0x186328000 -        0x186f9c09f  Foundation                              <42CADB85-DDBC-39F0-AC69-7B80A970829F>  /System/Library/Frameworks/Foundation.framework/Foundation
+           0x1876b2000 -        0x187c2efff  CoreFoundation                          <679DD35B-CF78-3910-8CA8-E879AA7B91DC>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x1901f7000 -        0x1902bbc1f  IOKit                                   <F4F8ED0E-3429-33F9-B810-8817BB4A5F32>  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+           0x1920a4000 -        0x19221d23f  AccessibilityUtilities                  <07829B77-1B66-353B-B3B1-2C2981F51CAE>  /System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities
+           0x194e98000 -        0x1952b5b7f  CoreMotion                              <4015EE0E-1D04-30EB-AC94-9BE43F2F3365>  /System/Library/Frameworks/CoreMotion.framework/CoreMotion
+           0x1d8589000 -        0x1d85c2e6f  libsystem_kernel.dylib                  <883C62A5-410A-36AF-BDEC-4D95CFD85830>  /usr/lib/system/libsystem_kernel.dylib
+           0x211bd8000 -        0x211be4413  libsystem_pthread.dylib                 <AA68F73A-2E65-3FC5-8374-977A97B0BA84>  /usr/lib/system/libsystem_pthread.dylib
+
+
+Powerstats for:   tccd
+UUID:             AC9FEE8D-096C-34CD-AEAF-8B27B70D4436
+Path:             /System/Library/PrivateFrameworks/TCC.framework/Support/tccd
+Resource Coalition: 2 samples "com.apple.tccd"(33)
+On Behalf Of:     2 samples UNKNOWN [4845] (2 samples originated by UNKNOWN [4845])
+Architecture:     arm64e
+Start time:       2026-07-29 09:09:54.773 +0900
+End time:         2026-07-29 09:09:58.301 +0900
+Num samples:      2 (5%)
+Primary state:    2 samples Non-Frontmost App, Non-Suppressed, User mode, Effective Thread QoS Background, Requested Thread QoS Default, Override Thread QoS Unspecified, e-core
+User Activity:    0 samples Idle, 2 samples Active
+Power Source:     2 samples on Battery, 0 samples on AC
+  2  ??? (libsystem_pthread.dylib + 2732) [0x211bd8aac]
+    2  ??? (libsystem_pthread.dylib + 2572) [0x211bd8a0c]
+      2  ??? (libdispatch.dylib + 84576) [0x18f667a60]
+        2  ??? (libdispatch.dylib + 86492) [0x18f6681dc]
+          2  ??? (libdispatch.dylib + 125852) [0x18f671b9c]
+            2  ??? (libdispatch.dylib + 41272) [0x18f65d138]
+              2  ??? (libdispatch.dylib + 122424) [0x18f670e38]
+                2  ??? (libdispatch.dylib + 112076) [0x18f66e5cc]
+                  2  ??? (libxpc.dylib + 79260) [0x211c3659c]
+                    2  ??? (libxpc.dylib + 72120) [0x211c349b8]
+                      2  ??? (tccd + 7860) [0x102541eb4]
+                        1  ??? (tccd + 307708) [0x10258b1fc]
+                          1  ??? (CoreFoundation + 33804) [0x1876ba40c]
+                            1  <on behalf of UNKNOWN [4845] (originated by UNKNOWN [4845])>
+                        1  ??? (tccd + 307688) [0x10258b1e8]
+                          1  ??? (tccd + 11804) [0x102542e1c]
+                            1  ??? (tccd + 13164) [0x10254336c]
+                              1  ??? (tccd + 35520) [0x102548ac0]
+                                1  ??? (tccd + 34880) [0x102548840]
+                                  1  ??? (Security + 8276) [0x19001e054]
+                                    1  ??? (Security + 7488) [0x19001dd40]
+                                      1  ??? (libCoreEntitlements.dylib + 9180) [0x211e2a3dc]
+                                        1  ??? (libCoreEntitlements.dylib + 11404) [0x211e2ac8c]
+                                          1  ??? (libCoreEntitlements.dylib + 11224) [0x211e2abd8]
+                                            1  ??? (libCoreEntitlements.dylib + 12304) [0x211e2b010]
+                                              1  ??? (libCoreEntitlements.dylib + 11912) [0x211e2ae88]
+                                                1  ??? (libCoreEntitlements.dylib + 10492) [0x211e2a8fc]
+                                                  1  ??? (libCoreEntitlements.dylib + 11404) [0x211e2ac8c]
+                                                    1  ??? (libCoreEntitlements.dylib + 11224) [0x211e2abd8]
+                                                      1  ??? (libCoreEntitlements.dylib + 12304) [0x211e2b010]
+                                                        1  ??? (libCoreEntitlements.dylib + 11564) [0x211e2ad2c]
+                                                          1  ??? (libCoreEntitlements.dylib + 10564) [0x211e2a944]
+                                                            1  ??? (CoreFoundation + 32648) [0x1876b9f88]
+                                                              1  ??? (CoreFoundation + 117148) [0x1876ce99c]
+                                                                1  <on behalf of UNKNOWN [4845] (originated by UNKNOWN [4845])>
+
+  Binary Images:
+           0x102540000 -                ???  tccd                      <AC9FEE8D-096C-34CD-AEAF-8B27B70D4436>  /System/Library/PrivateFrameworks/TCC.framework/Support/tccd
+           0x1876b2000 -        0x187c2efff  CoreFoundation            <679DD35B-CF78-3910-8CA8-E879AA7B91DC>  /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+           0x18f653000 -        0x18f698b3f  libdispatch.dylib         <C19E1CAE-FEE0-3E31-844D-A31BF2C39BD7>  /usr/lib/system/libdispatch.dylib
+           0x19001c000 -        0x1901f685f  Security                  <A9B5EBA1-FA57-3E36-99C4-02009CC007CA>  /System/Library/Frameworks/Security.framework/Security
+           0x211bd8000 -        0x211be4413  libsystem_pthread.dylib   <AA68F73A-2E65-3FC5-8374-977A97B0BA84>  /usr/lib/system/libsystem_pthread.dylib
+           0x211c23000 -        0x211c6aeff  libxpc.dylib              <D8F305D0-530F-3C72-B7DE-F89EF48C567C>  /usr/lib/system/libxpc.dylib
+           0x211e28000 -        0x211e325ff  libCoreEntitlements.dylib <CE14093E-A362-379D-87EF-300BD4B4BD85>  /usr/lib/libCoreEntitlements.dylib
